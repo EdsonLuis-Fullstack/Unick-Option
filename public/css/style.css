@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #B290E9;
+  border-radius: 20px;
+}
+.buttonAnimation:hover i{
+  margin-left: 10px;
+}
+.buttonAnimation i{
+  transition: all 0.2s ease-in-out;
+}
+.animationMain {
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+  animation: animationNew 1s 0.2s forwards;
+}
+.initAnimation {
+  opacity: 0%;
+  transform: translateY(-30px);
+  animation: initAnimation 1s 0.2s forwards;
+}
+.initAnimationInverse {
+  opacity: 0%;
+  transform: translateY(30px);
+  animation: initAnimationInverse 1s 0.2s forwards;
+}
+@keyframes initAnimation {
+  0% {
+    opacity: 0%;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 100%;
+
+    transform: translateY(0px);
+  }
+}
+@keyframes initAnimationInverse {
+  0% {
+    opacity: 0%;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 100%;
+
+    transform: translateY(0px);
+  }
+}
+@keyframes animationNew {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 210px;
+    height: 22px;
+  }
+}
+#shadowButton {
+  box-shadow: inset 0px 0px 6px 3px #ffffff25;
+  backdrop-filter: blur(14px);
+}
+@media (max-width: 500px) {
+  .default {
+    opacity: 0%;
+    overflow: hidden;
+    visibility: hidden;
+    position: fixed;
+    z-index: 4;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .titulo {
+    font-size: 32px !important;
+    line-height: 52px !important;
+  }
+}
+.active {
+  opacity: 100%;
+  visibility: visible;
+}
+#MenuMobile {
+  border: none;
+  border-top: 3px solid white;
+  cursor: pointer;
+  transform: rotate(0deg) translateY(0px);
+  transition: all 0.5s;
+}
+.menuOnAnimation {
+  border: none !important;
+}
+.menuOnAnimation::after {
+  transform: rotate(45deg) translateY(-5px) !important;
+}
+.menuOnAnimation::before {
+  transform: rotate(-45deg) translateY(5px) !important;
+}
+#MenuMobile::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transform: rotate(0deg) translateY(0px);
+  transition: all 0.5s;
+}
+#MenuMobile::before {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transform: rotate(0deg) translateY(0px);
+  transition: all 0.5s;
+}
+.titulo {
+  font-family: inter;
+  font-weight: 600;
+  font-size: 84.22px;
+  line-height: 88px;
+  letter-spacing: -1.7px;
+  text-align: center;
+  color: white;
+}
+.carrossel {
+  position: relative;
+  width: 100%; /* Largura total do contêiner */
+  max-width: 800px; /* Ajuste conforme o necessário */
+  overflow: hidden; /* Oculta o conteúdo excedente */
+  margin: 0 auto; /* Centraliza o carrossel */
+}
+
+.conte {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Suaviza a transição */
+}
+
+.conte img {
+  width: 100%; /* Cada imagem ocupa toda a largura do contêiner */
+  flex-shrink: 0; /* Garante que cada imagem tenha largura fixa */
+}
+#cardpag{
+  position: relative;
+  left: 0px;
+}
+#cardpag:not(:first-child){
+  margin-left: -20px;
+}
+#cardpag:hover {
+  transform: translateY(-20px);
+}
+#cardpag:hover ~ #cardpag{
+  left: 50px;
+}
