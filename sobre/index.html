@@ -23,45 +23,53 @@
     </script>
 </head>
 <body class="bg-black relative overflow-x-hidden">
-    <header
-      class="bg-[#020103] flex py-[13px] z-50 fixed w-dvw items-center px-[15px] md:px-[0px] justify-between md:justify-center top-0"
-    >
-      <div>
-        <img src="\public\image\Logo.png" alt="" />
-      </div>
-      <ul
-        class="hidden md:flex text-[#908F91] py-[8px] transition-all text-[15px] border-[1px] border-[#FFFFFF25] gap-[30px] px-[40px] items-center rounded-[30px] mx-[74px]"
+  <header
+  class="bg-[#020103] flex py-[13px] z-50 fixed w-dvw items-center px-[15px] md:px-[0px] justify-between md:justify-center top-0"
+>
+  <div>
+    <img src="../public/image/olymptrade/Logo.png" alt="" />
+  </div>
+  <ul
+    class="hidden md:flex text-[#908F91] py-[8px] transition-all text-[15px] border-[1px] border-[#FFFFFF25] gap-[30px] px-[40px] items-center rounded-[30px] mx-[74px]"
+  >
+    <li><a href="\index.html">Home</a></li>
+    <li><a href="sobre\index.html">Sobre</a></li>
+    <li>Suporte</li>
+    <li>Política de privacidade</li>
+  </ul>
+  <div class="flex items-center">
+    <div class="p-[5px] border-[1px] border-[#FFFFFF25] rounded-xl">
+      <button
+        id="shadowButton"
+        class="px-[20px] py-[5px] text-[17px] text-white rounded-xl bg-[#391C67]"
       >
-      <li><a href="\index.html">Home</a></li>
-      <li><a href="sobre\index.html">Sobre</a></li>
-      <li><button>Company</button></li>
-      <li><button>Blog</button></li>
-      <li><button>Changelog</button></li>
-      </ul>
-      <div class="flex items-center">
-        <div class="p-[5px] border-[1px] border-[#FFFFFF25] rounded-xl">
-          <button
-            id="shadowButton"
-            class="px-[20px] py-[5px] text-[17px] text-white rounded-xl bg-[#391C67]"
-          >
-            Join waitlis
-          </button>
-        </div>
-        <div class="ml-[15px] flex items-center md:hidden">
-          <button id="MenuMobile"></button>
-        </div>
-      </div>
-    </header>
+        Join waitlis
+      </button>
+    </div>
+    <div class="ml-[15px] flex items-center md:hidden">
+      <button id="MenuMobile"></button>
+    </div>
+  </div>
+</header>
+<ul
+  class="default hidden text-[#908F91] py-[8px] duration-[0.8s] transition-all text-[15px] border-[1px] border-[#FFFFFF25] gap-[30px] px-[40px] items-center"
+  id="MenuLinks"
+>
+  <li><a href="\index.html">Home</a></li>
+  <li><a href="sobre\index.html">Sobre</a></li>
+  <li>Suporte</li>
+  <li>Política de privacidade</li>
+</ul>
     <main class="w-full flex flex-col justify-center items-center align-center">
         <!--section 01-->
-        <section class="pt-[150px] w-[80%] flex flex-col justify-center items-center align-center text-white gap-[35px]">
+        <section class="pt-[100px] md:pt-[150px] w-[90%] md:w-[80%] flex flex-col justify-center items-center align-center text-white gap-[25px]">
             <div class="flex flex-col justify-center items-center align-center">
-                <h1 class="font-inter text-center text-[32.5px] font-[700]">
+                <h1 class="font-inter text-center text-[26px] md:text-[32.5px] font-[700]">
                     Sobre nós
                 </h1>
             </div>
             <div class="gap-[35px] flex flex-col justify-center align-center items-center">
-                <h2 class="text-[22px] font-inter font-[400] text-center">
+                <h2 class="text-[16px] md:text-[22px] font-inter font-[400] text-center">
                     Binomo é uma empresa virada ao Cliente que desenvolve novas oportunidades no mercado de modernas tecnologias de bolsa.
                 </h2>
                 <p class="font-inter font-[400] text-[14px] text-start text-[#595959]">Na Binomo, pensamos em tudo, até nos mínimos detalhes. No caminho para criar uma plataforma de negociação de classe mundial, sentimos que é nossa prioridade oferecer serviços e suporte da mais alta qualidade, incluindo tutoriais de nível profissional, serviços analíticos e suporte ao cliente.<br><br>
@@ -75,35 +83,31 @@
             </div>
         </section>
         <!--section 02-->
-        <section class="pt-[150px] w-[80%] flex flex-col pb-[50px] justify-center items-center align-center text-white gap-[35px]">
+        <section class="pt-[75px] md:pt-[150px] w-[90%] md:w-[80%] flex flex-col pb-[50px] justify-center items-center align-center text-white gap-[25px]">
             <h2 class="text-[25px] font-inter font-[700] text-center">
                 Nossos benefícios:
             </h2>
-            <div class="w-full gap-[35px] flex justify-center align-center items-start">
-                <div class="w-[50%] gap-[20px] flex flex-col justify-center align-center items-center">
+            <div class="w-full gap-[35px] flex flex-wrap justify-center align-center items-center">
+                <div class="w-[90%] md:w-[50%] gap-[20px] flex flex-col justify-center align-center items-center">
                     <ul class="flex flex-col justify-start items-start align-center gap-[15px] text-[#595959]">
-                        <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
-                        <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
-                        <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
                         <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
                         <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
                         <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
                     </ul>
                 </div>
-                <div class="w-[50%] gap-[35px] flex flex-col justify-start align-start items-start">
-                    <p class="font-inter font-[400] text-[14px] text-start">Cartão de Crédito aceito</p>
-                    <div class="gap-[20px] flex  justify-center align-center items-center">
-                        <svg width="54" height="37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.062 35.93v-2.385a1.416 1.416 0 00-1.493-1.51 1.469 1.469 0 00-1.336.676 1.395 1.395 0 00-1.255-.675 1.255 1.255 0 00-1.113.563v-.468H6.04v3.798h.835v-2.09a.89.89 0 01.93-1.01c.547 0 .826.359.826 1.002v2.114h.834v-2.106a.894.894 0 01.93-1.01c.563 0 .834.359.834 1.002v2.114l.834-.016zm12.345-3.8h-1.36v-1.152h-.834v1.153h-.755v.755h.77v1.748c0 .882.343 1.406 1.32 1.406.365.002.723-.1 1.033-.294l-.238-.707a1.523 1.523 0 01-.732.215c-.397 0-.548-.255-.548-.636v-1.733h1.351l-.008-.755zm7.048-.094a1.119 1.119 0 00-1.001.556v-.461h-.819v3.798h.827V33.8c0-.627.27-.977.794-.977.177-.002.352.03.517.095l.254-.794a1.768 1.768 0 00-.588-.103l.016.016zm-10.656.397a2.84 2.84 0 00-1.55-.397c-.96 0-1.589.46-1.589 1.215 0 .62.461 1.002 1.312 1.12l.397.056c.453.064.667.183.667.397 0 .294-.302.461-.866.461a2.022 2.022 0 01-1.263-.397l-.398.644a2.74 2.74 0 001.645.493c1.097 0 1.733-.517 1.733-1.24s-.501-1.017-1.328-1.136l-.397-.056c-.358-.048-.643-.12-.643-.374s.27-.445.722-.445c.42.005.83.117 1.192.326l.366-.668zm22.134-.397a1.12 1.12 0 00-1.001.556v-.461h-.819v3.798h.827V33.8c0-.627.27-.977.794-.977.177-.002.353.03.517.095l.254-.794a1.767 1.767 0 00-.588-.103l.016.016zm-10.648 1.986a1.919 1.919 0 002.026 1.987c.496.025.984-.137 1.367-.453l-.398-.668a1.67 1.67 0 01-.993.342 1.22 1.22 0 010-2.432c.36.004.708.124.994.342l.397-.668a1.986 1.986 0 00-1.367-.452 1.918 1.918 0 00-2.026 1.986v.016zm7.74 0v-1.891h-.827v.46a1.442 1.442 0 00-1.192-.556 1.987 1.987 0 100 3.974 1.442 1.442 0 001.192-.557v.461h.826v-1.89zm-3.076 0a1.148 1.148 0 11.694 1.126 1.142 1.142 0 01-.694-1.126zm-9.972-1.987a1.987 1.987 0 00.055 3.974 2.308 2.308 0 001.578-.517l-.398-.612a1.805 1.805 0 01-1.104.397 1.053 1.053 0 01-1.137-.93h2.822v-.317c0-1.192-.74-1.986-1.804-1.986l-.012-.008zm0 .74a.942.942 0 01.961.921h-1.986a.978.978 0 011.009-.922h.016zM47.68 34.03v-3.425h-.795v1.987a1.442 1.442 0 00-1.192-.557 1.987 1.987 0 100 3.973 1.443 1.443 0 001.192-.556v.46h.795V34.03zm1.378 1.347a.399.399 0 01.274.107.371.371 0 01.027.505.37.37 0 01-.15.107.373.373 0 01-.15.032.397.397 0 01-.358-.23.373.373 0 01.083-.414.398.398 0 01.286-.107h-.012zm0 .67a.282.282 0 00.284-.285.294.294 0 00-.077-.199.287.287 0 00-.322-.063.292.292 0 00-.096.063.294.294 0 000 .398.302.302 0 00.223.087h-.012zm.024-.472a.16.16 0 01.103.032.1.1 0 01.036.084.096.096 0 01-.028.071.139.139 0 01-.084.035l.116.132h-.091l-.108-.131h-.035v.131h-.076v-.35l.167-.004zm-.087.068v.095h.087a.088.088 0 00.048 0 .04.04 0 000-.035.04.04 0 000-.036.084.084 0 00-.048 0l-.087-.024zm-4.37-1.613a1.148 1.148 0 11.693 1.126 1.14 1.14 0 01-.694-1.126zm-27.904 0v-1.9h-.826v.462a1.443 1.443 0 00-1.192-.557 1.987 1.987 0 100 3.974 1.442 1.442 0 001.192-.557v.461h.826V34.03zm-3.075 0a1.148 1.148 0 111.152 1.216 1.14 1.14 0 01-1.16-1.216h.008z" fill="#2A2B30"/><path d="M20.523 3.187H33.04v22.491H20.523V3.187z" fill="#FF5F00"/><path d="M21.319 14.435a14.278 14.278 0 015.463-11.248C20.917-1.421 12.496-.75 7.436 4.729c-5.06 5.48-5.06 13.928 0 19.408s13.481 6.15 19.346 1.542a14.28 14.28 0 01-5.463-11.244z" fill="#EB001B"/><path d="M49.926 14.435a14.304 14.304 0 01-23.143 11.243 14.303 14.303 0 000-22.492A14.303 14.303 0 0149.926 14.43v.004zm-1.367 8.86v-.462h.187v-.095h-.473v.095h.203v.461h.084zm.918 0v-.557h-.143l-.167.398-.167-.398h-.127v.556h.103v-.417l.155.362h.108l.154-.362v.422l.084-.005z" fill="#F79E1B"/></svg>
-                        <svg width="81" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.384 6.43L20.898 30.606H14.08L8.893 11.301c-.297-1.182-.593-1.612-1.52-2.113C5.817 8.364 3.26 7.612 1 7.146l.148-.716h11.005c1.408 0 2.668.895 3.002 2.471L17.86 22.87l6.744-16.44h6.78zm26.79 16.26c.038-6.375-9.115-6.733-9.078-9.563.037-.86.89-1.79 2.742-2.005.927-.108 3.483-.215 6.374 1.074l1.148-5.122C57.804 6.537 55.803 6 53.32 6c-6.373 0-10.893 3.295-10.93 7.987-.038 3.474 3.223 5.408 5.669 6.59 2.52 1.182 3.372 1.934 3.372 3.009-.037 1.612-2.001 2.328-3.854 2.364-3.26.036-5.15-.86-6.633-1.54l-1.185 5.3c1.519.681 4.298 1.254 7.188 1.29 6.744-.036 11.19-3.295 11.228-8.31zm16.86 7.88H81L75.775 6.394h-5.52c-1.224 0-2.298.716-2.743 1.755l-9.708 22.385h6.781l1.334-3.617h8.3l.815 3.653zm-7.225-8.56l3.409-9.062 1.964 9.062h-5.373zM40.61 6.43l-5.336 24.14H28.79l5.372-24.14h6.448z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="8.239" y1="30.193" x2="75.127" y2="4.708" gradientUnits="userSpaceOnUse"><stop stop-color="#1A1E5A"/><stop offset="1" stop-color="#122D98"/></linearGradient></defs></svg>
-                        <svg width="47" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.748 21.342h2.974c.085 0 .283-.028.368-.028.567-.113 1.048-.623 1.048-1.331 0-.68-.481-1.19-1.048-1.332-.085-.028-.255-.028-.368-.028h-2.974v2.72z" fill="url(#paint0_linear)"/><path d="M36.383 2.563a5.156 5.156 0 00-5.156 5.155v5.353h7.28c.17 0 .368 0 .51.029 1.643.085 2.86.934 2.86 2.407 0 1.162-.82 2.153-2.35 2.351v.057c1.67.113 2.945 1.048 2.945 2.492 0 1.558-1.416 2.578-3.285 2.578h-7.988v10.48h7.563a5.156 5.156 0 005.155-5.155V2.563h-7.534z" fill="url(#paint1_linear)"/><path d="M37.77 15.847c0-.68-.481-1.133-1.048-1.218-.056 0-.198-.028-.283-.028h-2.691v2.493h2.69c.086 0 .256 0 .284-.029.567-.085 1.048-.538 1.048-1.218z" fill="url(#paint2_linear)"/><path d="M7.888 2.563a5.156 5.156 0 00-5.155 5.155v12.718c1.445.708 2.946 1.161 4.447 1.161 1.785 0 2.748-1.076 2.748-2.55v-6.004h4.418v5.977c0 2.322-1.444 4.22-6.344 4.22-2.974 0-5.297-.651-5.297-.651v10.848h7.563a5.156 5.156 0 005.155-5.155V2.563H7.888z" fill="url(#paint3_linear)"/><path d="M22.136 2.563a5.156 5.156 0 00-5.155 5.155v6.741c1.302-1.104 3.568-1.813 7.222-1.643 1.955.085 4.05.624 4.05.624v2.18c-1.047-.537-2.294-1.02-3.908-1.132-2.776-.199-4.447 1.161-4.447 3.54 0 2.408 1.671 3.767 4.447 3.54 1.614-.113 2.86-.622 3.909-1.132v2.18s-2.068.539-4.05.624c-3.655.17-5.92-.538-7.224-1.643v11.896h7.563a5.156 5.156 0 005.155-5.155V2.563h-7.563z" fill="url(#paint4_linear)"/><defs><linearGradient id="paint0_linear" x1="31.222" y1="19.986" x2="43.951" y2="19.986" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"/><stop offset=".229" stop-color="#00873F"/><stop offset=".743" stop-color="#40A737"/><stop offset="1" stop-color="#5CB531"/></linearGradient><linearGradient id="paint1_linear" x1="31.222" y1="18.002" x2="43.952" y2="18.002" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"/><stop offset=".229" stop-color="#00873F"/><stop offset=".743" stop-color="#40A737"/><stop offset="1" stop-color="#5CB531"/></linearGradient><linearGradient id="paint2_linear" x1="31.222" y1="15.844" x2="43.951" y2="15.844" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"/><stop offset=".229" stop-color="#00873F"/><stop offset=".743" stop-color="#40A737"/><stop offset="1" stop-color="#5CB531"/></linearGradient><linearGradient id="paint3_linear" x1="2.727" y1="18.002" x2="15.653" y2="18.002" gradientUnits="userSpaceOnUse"><stop stop-color="#1F286F"/><stop offset=".475" stop-color="#004E94"/><stop offset=".826" stop-color="#0066B1"/><stop offset="1" stop-color="#006FBC"/></linearGradient><linearGradient id="paint4_linear" x1="16.907" y1="18.002" x2="29.461" y2="18.002" gradientUnits="userSpaceOnUse"><stop stop-color="#6C2C2F"/><stop offset=".173" stop-color="#882730"/><stop offset=".573" stop-color="#BE1833"/><stop offset=".859" stop-color="#DC0436"/><stop offset="1" stop-color="#E60039"/></linearGradient></defs></svg>
-                    </div>
-                </div>
+                  <div class="w-[90%] md:w-[50%] gap-[20px] flex flex-col justify-center align-center items-center">
+                      <ul class="flex flex-col justify-start items-start align-center gap-[15px] text-[#595959]">
+                          <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
+                          <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
+                          <li class="font-inter text-start flex justify-center items-center align-center gap-[15px]"><i class="fa-regular fa-circle-check text-[#391C67] text-[20px]"></i>Uma plataforma de negociação e alta qualidade com uma ampla variedade de ativos financeiros.</li>
+                      </ul>
+                  </div>
             </div>
         </section>
     </main>
     <footer class="flex flex-col gap-[30px] md:gap-0 md:flex-row justify-between px-[50px] text-white  py-[41px] border-solid border-t-[1px] border-[#FFFFFF15]">
         <div class="flex items-center gap-[30px] md:items-start md:flex-col md:justify-between">
-          <div class="flex items-center gap-[10px]"> <img src="./public/image/Logo.png" alt="" srcset=""><h3 class="font-inter text-[13px]  md:text-[17px]">Ai Startup Kit</h3></div>
+          <div class="flex items-center gap-[10px]"> <img src="../public/image/olymptrade/Logo.png" alt="" srcset=""><h3 class="font-inter text-[13px]  md:text-[17px]">Ai Startup Kit</h3></div>
           <div class="flex gap-[25px]">
             <svg class="opacity-50" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.1562 17.6109C17.0917 17.7286 16.9967 17.8267 16.8813 17.8951C16.7659 17.9636 16.6342 17.9998 16.5 18H12C11.8738 18 11.7496 17.9681 11.639 17.9073C11.5284 17.8465 11.4349 17.7587 11.3672 17.6522L7.57125 11.6869L2.055 17.7544C1.92053 17.8988 1.73454 17.9845 1.53735 17.9927C1.34017 18.0009 1.14769 17.9311 1.00163 17.7984C0.855582 17.6657 0.767731 17.4807 0.757129 17.2836C0.746527 17.0866 0.814029 16.8933 0.944999 16.7456L6.73594 10.3706L0.867186 1.15313C0.794906 1.03973 0.754444 0.908984 0.750037 0.774582C0.745629 0.64018 0.777438 0.507066 0.842134 0.389177C0.906829 0.271288 1.00203 0.172962 1.11777 0.104494C1.23351 0.0360256 1.36552 -6.53095e-05 1.5 8.87202e-08H6C6.12622 3.91221e-05 6.2504 0.0319361 6.36102 0.0927355C6.47164 0.153535 6.56512 0.24127 6.63281 0.347813L10.4287 6.31312L15.945 0.245625C16.0795 0.101174 16.2655 0.015547 16.4626 0.00730857C16.6598 -0.00092985 16.8523 0.0688843 16.9984 0.201615C17.1444 0.334346 17.2323 0.519295 17.2429 0.716365C17.2535 0.913434 17.186 1.10674 17.055 1.25438L11.2641 7.62469L17.1328 16.8478C17.2047 16.9613 17.2448 17.0919 17.2489 17.2262C17.253 17.3604 17.221 17.4933 17.1562 17.6109Z" fill="white"/>
